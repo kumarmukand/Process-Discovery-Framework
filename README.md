@@ -1,6 +1,7 @@
 # Desktop-Application-Framework
+The Desktop Application Framework is a Python-based framework for developing desktop applications. It provides a simple and intuitive interface for developers to create powerful and customized applications for various purposes.
 
- Prerequisite:
+ Prerequisites:
  User needs to install the following:
  1. Python 3.8 or above
  2. Docker Environment
