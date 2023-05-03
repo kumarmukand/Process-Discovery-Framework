@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  alphaminer:
+    build: .
+    volumes:
+      -  //e/process-mining-lab/Desktop-Application-Framework/app-data/alpha_miner:/alpha_miner

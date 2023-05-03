@@ -1,0 +1,39 @@
+
+{
+    "ALPHA_MINER": {
+        "INPUT" : "\nLog file(.xes file format)",
+        "OUTPUT" : "\nResultant Petrinet(.pnml file format)",
+        "DESCRIPTION" : ["The alpha miner is one of the most known Process Discovery algorithm and is able to find:\n",
+                         "1) A Petri net model where all the transitions are visible and unique and correspond to classified events (for example, to activities).\n",
+                         "2) An initial marking that describes the status of the Petri net model when a execution starts.\n",
+                         "3) A final marking that describes the status of the Petri net model when a execution ends.\n"
+        ]
+    },
+    "INDUCTIVE_MINER": {
+        "INPUT" : "\nLog file(.xes file format)",
+        "OUTPUT" : "\nResultant Petrinet(.pnml file format)",
+        "DESCRIPTION" : ["The basic idea of Inductive Miner is about detecting a 'cut' in the log (e.g. sequential cut, parallel cut, concurrent cut and loop cut)\n",
+                         "and then recur on sublogs, which were found applying the cut, until a base case is found. The Directly-Follows variant avoids the recursion\n",
+                         "on the sublogs but uses the Directly Follows graph.\n"
+        ]
+    },
+    "HEURISTIC_MINER": {
+        "INPUT" : "\nLog file(.xes file format)",
+        "OUTPUT" : "\nResultant Petrinet(.pnml file format)",
+        "DESCRIPTION" : "Heuristics Miner is an algorithm that acts on the Directly-Follows Graph, providing way to handle with noise and to find common constructs (dependency between two activities, AND).\n"
+    },
+    "CORRELATION_MINER": {
+        "INPUT" : "\nLog file(.xes file format)",
+        "OUTPUT" : "\nResultant Petrinet(.pnml file format)",
+        "DESCRIPTION" : ""
+    },
+    "DFG": {
+        "INPUT" : "\nLog file(.xes file format)",
+        "OUTPUT" : "\nResultant DFG(.pickle file format)",
+        "DESCRIPTION" : ["Directly-Follows graphs are graphs where the nodes represent the events/activities in the log and directed edges are present between nodes\n",
+                         "if there is at least a trace in the log where the source event/activity is followed by the target event/activity. On top of these directed edges,\n",
+                         "it is easy to represent metrics like frequency (counting the number of times the source event/activity is followed by the target event/activity) and performance\n",
+                         "(some aggregation, for example, the mean, of time inter-lapsed between the two events/activities)"
+        ]
+    }
+}
